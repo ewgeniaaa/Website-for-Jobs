@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .wrapper_of_2divs:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* create job button */
+.create_container{
+  margin: 0;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.create_button{
+  background-color: lightblue; 
+  color: teal; 
+  border-radius: 5px; 
+  height: 35px; 
+  border: none; 
+  font-size: 17px;
+}
+
+.create_button:hover{
+  background-color: teal;
+  color: whitesmoke;
+  transition: 0.4s;
+}
+
+/* form wrap */
+.form_wrap{
+    background-color: rgba(0, 128, 128, 0.534);
+    border-radius: 5px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* separation line */
+hr.solid {
+  border-top: 3px solid rgba(187, 187, 187, 0.356);
+}
+
+/* offer */
+.offer{
+  background-color: rgba(245, 245, 245, 0.651); 
+  border-radius: 5px; 
+  margin: 5px; 
+  padding: 10px;
+  color: teal;
+}
+
+.offer a{
+  text-decoration: none; 
+  color: teal;
+}
+
+/* log out wrap */
+.log-out{
+  padding-top: 100px;
+  display: table; 
+  margin: 0 auto;
+}
+
+.employer-info{
+  color: whitesmoke;
+}

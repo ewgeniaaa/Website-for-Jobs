@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Henny+Penny&display=swap');
+body{
+    margin: 0;
+    background-image: url(images/wallpaper.jpg) ;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.white{
+    background-color: white;
+}
+
+.topnav{
+    background-color: #d9f6f8d2;
+    width: 100%;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    box-shadow: 0 0 3px 0 grey;
+}
+
+#logo{
+    height: 45px;
+    width: auto;
+    float: left;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px; 
+    margin: auto;
+}
+/* main page big logo */ 
+.logo2{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* making big logo shake */
+.logo2:hover {
+    animation: shake 1.1s; 
+    animation-iteration-count: infinite; 
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.login-choice {
+    /* aligning */
+    float: right;
+    text-align: center;
+    padding: 18px 21px;
+    text-decoration: none;
+}
+
+
+    /* button styling */
+.button{
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: lightblue;
+    border: none;
+    color: teal;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    vertical-align: middle;
+}
+#button1{
+    width: 123px;
+}
+
+#button2{
+    width: 68px;
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px;
+  }
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+  }
+
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/*search bar */
+.search{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm{
+    width: 100%;
+    border: 3px solid #00b4ccb4;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px ;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.searchTerm:focus{
+    color: teal;
+}
+
+.searchButton{
+    width: 45px;
+    height: 41px;
+    border: 1px solid #00b4ccb4;
+    background: #00b4ccb4;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.searchButton:hover{
+    background-color: teal;
+}
+
+.fa{
+    font-size: large;
+    color: white;
+}
+
+/* searchbar changing when resizing the wrap */
+.wrap{
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* category */
+
+.select_category{
+    margin-left: 25%;
+    margin-top: 300px;
+    height: 30px;
+    right: 54%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+  .select_category select {
+    background-color: #00b4cca8;
+    color: teal;
+    padding: 12px;
+    width: 200px;
+    height: auto;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.048);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .select_category::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+  }
+  
+  .select_category:hover::before {
+    color: rgba(6, 57, 70, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .select_category select option {
+    padding: 30px;
+  }
+
+/* ------------ reg form --------------- */
+
+.img_in_nav{
+    height: 45px;
+}
+
+.nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_center{
+    position: relative;
+}
+
+.nav_left{
+    padding-left: 15px;
+}
+
+.img_title{
+    width: 100%;
+}
+
+.top_title{
+    position: relative;
+}
+
+.title_over{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.big_title{
+    font-size: 3.5vw;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    text-shadow: 1px 2px 3px #666;;
+}
+
+@media screen and (max-width: 600px) {
+    .big_title {
+      font-size: 25pt;
+    }
+    .title_over{
+        top: 25%;
+    }
+  }
+
+  .reg_form_wrap{
+      width: 55%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.647);
+      padding: 40px;
+      border-radius: 10px;
+  }
+
+  .reg_switch_wrap{
+      width: 80%;
+      margin: 0 auto 30px auto;
+      text-align: center;
+  }
+
+  .reg_switch{
+      width: 80%;
+  }
+
+  #active_reg{
+    background-color: teal;
+    color: white;
+    border: none;
+  }
+
+  #unactive_reg{
+    background-color: lightblue;
+    color: teal;
+    border: none;
+  }
+
+  #unactive_reg:hover{
+    background-color: teal;
+    color: white;
+  }
+
+  

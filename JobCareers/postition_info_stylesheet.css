@@ -1,0 +1,115 @@
+/* navigation */
+.topnav{
+    display: table;
+}
+
+.nav_mid_img{
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin:0 auto;
+    height: 50px;
+    width: auto;
+}
+
+#nav_mid_img{
+    height: 45px;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.btn{
+    float: right; 
+    background-color: lightblue; 
+    color: teal; 
+    border-radius: 5px; 
+    height: 30px; 
+    border: none; 
+    font-size: 17px;
+    margin: 18px 21px;
+}
+
+.btn:hover {
+    padding-right: 8px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #login_btn{
+      width: 78px;
+  }
+
+  #reg_btn{
+    width: 143px;
+  }
+
+  /* cover position name */
+  .positionn{
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+  }
+
+  .name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    color: teal;
+  }
+
+  .wrapper{
+      width: 50%;
+      height: auto;
+      background-color: rgba(0, 128, 128, 0.596);
+      border-radius: 5px;
+      padding: 28px;
+      margin: 0 auto;
+      margin-top: 50px;
+  }
+
+  .job_description , .requirements{
+      color: white;
+  }
+
+  .apply{
+      margin: 0 auto;
+    height: 150px;
+    width: auto;
+    position: relative;
+  }
+
+  .apply_container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .apply_button{
+    background-color: lightblue; 
+    color: teal; 
+    border-radius: 5px; 
+    height: 35px; 
+    border: none; 
+    font-size: 17px;
+  }
+ 
+  .apply_button:hover{
+    background-color: teal;
+    color: whitesmoke;
+    transition: 0.4s;
+  }

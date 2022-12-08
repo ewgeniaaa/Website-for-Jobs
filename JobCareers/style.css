@@ -1,0 +1,363 @@
+html,body{margin: 0;}
+
+html *{
+    font-family: 'Pangolin', cursive;
+  }
+
+body{
+    background-image: url(images/wallpaper.jpg) ;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    font-family: 'Forum', cursive;
+}
+
+.topnav{
+    background-color: rgba(179, 232, 253, 0.11);
+    width: 100%;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    box-shadow: 0 0 3px 0 grey;
+}
+
+#logo{
+    height: 45px;
+    width: auto;
+    float: left;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px; 
+    margin: auto;
+}
+
+/* making big logo shake */
+.logo2:hover {
+    animation: shake 1.1s; 
+    animation-iteration-count: infinite; 
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.login-choice {
+    /* aligning */
+    float: right;
+    text-align: center;
+    padding: 18px 21px;
+    text-decoration: none;
+}
+
+
+    /* button styling */
+.button{
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: lightblue;
+    border: none;
+    color: teal;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    vertical-align: middle;
+}
+#login_button{
+    width: 123px;
+}
+
+#reg_button{
+    width: 68px;
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px;
+  }
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+  }
+
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+/* main page big logo */ 
+.logo2{
+  height: 200px;
+  width: auto;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+}
+
+/*search bar */
+.search{
+    width: 100%;
+    height: 41px;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: 3px solid #00b4ccb4;
+    border-right: none;
+    border-radius: 5px 0 0 5px ;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.searchTerm:focus{
+    color: teal;
+}
+
+.searchButton{
+    width: 45px;
+    height: 41px;
+    border: 1px solid #00b4ccb4;
+    background: #00b4ccb4;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.searchButton:hover{
+    background-color: teal;
+}
+
+.fa{
+    font-size: large;
+    color: white;
+}
+
+/* searchbar changing when resizing the wrap */
+.wrap{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* category */
+
+.select_category{
+    margin-left: 25%;
+    margin-top: 300px;
+    height: 30px;
+    right: 54%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+  .select_category select {
+    background-color: #00b4cca8;
+    color: teal;
+    padding: 12px;
+    width: 200px;
+    height: auto;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.048);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .select_category::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+  }
+  
+  .select_category:hover::before {
+    color: rgba(6, 57, 70, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .select_category select option {
+    padding: 30px;
+  }
+
+
+  /* job position div and listed jobs inside */
+
+.field{
+  background-color: rgba(0, 128, 128, 0.212);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 360px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.position {      
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 15px auto;
+  position: relative;
+  text-align:center;
+  border-radius: 7px;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+.box {
+  text-align: center;
+  height: auto;
+  width: 160px;
+  margin: 1% 0 1% 0;
+  color: teal;
+}
+
+.position:hover{
+  background-color: rgba(255, 255, 255, 0.767);
+}
+
+#job_icon{
+  width: 100px;
+  height: auto;
+}
+
+  /* button learn more */
+  .box a{
+    text-decoration: none;
+    color: teal;
+  }
+
+.learn_more {
+  /* aligning */
+  float: left;
+  text-align: center;
+  padding: 18px 21px;
+  text-decoration: none;
+  padding: 0;
+}
+
+  /* learn more button styling */
+
+#learn_more_button{
+  width: 135px;
+  margin: 0;
+  text-decoration: none;
+  color: teal;
+}
+
+.button:hover a {
+  padding-right: 15px;
+}
+
+.button a{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* adding LIKE button */
+
+    :root{
+        --like-font-size: 3rem 
+    }
+    .like-btn-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+    .like-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5s;
+      opacity: 0;
+      z-index: 2;
+    }
+    .fa-heart{
+        position: absolute;
+        font-size: var(--like-font-size);
+        -webkit-text-stroke: 2px #e5e5e5;
+        color: whitesmoke;
+        transition: all ease-in-out;
+    }  
+    .like-btn:checked + .fa-heart{
+        color: red;
+        -webkit-text-stroke: 1px red;
+        animation: .5s linear burst; 
+    }
+    @keyframes burst{
+      0%,10%{
+          transform: scale(1);
+          opacity: .5;
+          color:lavender;
+      }
+      45%{
+          transform: scale(.2) rotate(30deg);
+          opacity: .75;
+      }
+      50%{
+          transform: scale(2) rotate(-37.5deg);
+          opacity: 1;
+          color: red;
+          text-shadow: 2px 2px 6px rgba(235, 9, 9, 0.5);
+      }
+      90%,95%{
+          transform: scale(1) rotate(10deg);
+          text-shadow: none;
+      }
+      100% {
+          transform: rotate(-2.5deg);
+      }
+  
+    }
+  

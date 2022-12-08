@@ -1,0 +1,49 @@
+
+    .butn{
+    font-size: 17px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: lightblue;
+    border: none;
+    color: teal;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    vertical-align: middle;
+    float: right;
+    margin: 10px;
+    margin-top: 20px;
+}
+#logout{
+    width: 85px;
+}
+
+#profile{
+    width: 85px;
+}
+
+.butn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.butn:hover span {
+    padding-right: 8px;
+  }
+
+.butn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2px;
+    transition: 0.5s;
+  }
+
+.butn:hover span:after{
+    opacity: 1;
+    right: 0;
+}
